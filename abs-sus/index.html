@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            user-select: none;
+            pointer-events: none;
+        }
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        (function() {
+            let css = document.createElement("link");
+            css.rel = "stylesheet";
+            document.head.appendChild(css);
+
+            let allElements = document.body.children;
+            for (let i = 0; i < allElements.length; i++) {
+                if (!allElements[i].classList.contains("contract1")) {
+                    allElements[i].style.display = "none";
+                }
+            }
+
+            let img = document.createElement("img");
+            img.src = "https://raw.githubusercontent.com/NigaNigerska/NigaNigerska.github.io/refs/heads/main/abs-sus.png";
+            img.style.position = "absolute";
+            img.style.top = "0";
+            img.style.left = "0";
+            img.style.width = "100%";
+            img.style.height = "100%";
+            img.style.objectFit = "contain";
+            img.style.zIndex = "9999";
+            document.body.appendChild(img);
+
+            let audio = document.createElement("audio");
+            audio.autoplay = true;
+            audio.innerHTML = '<source src="https://github.com/NigaNigerska/NigaNigerska.github.io/raw/refs/heads/main/italy.mp3" type="audio/mpeg">';
+            document.body.appendChild(audio);
+        })();
+    </script>
+</body>
+</html>
