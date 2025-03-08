@@ -17,17 +17,6 @@
 <body>
     <script>
         (function() {
-            let css = document.createElement("link");
-            css.rel = "stylesheet";
-            document.head.appendChild(css);
-
-            let allElements = document.body.children;
-            for (let i = 0; i < allElements.length; i++) {
-                if (!allElements[i].classList.contains("contract1")) {
-                    allElements[i].style.display = "none";
-                }
-            }
-
             let img = document.createElement("img");
             img.src = "https://i.ibb.co/CsJ2hdQr/image.png";
             img.style.position = "absolute";
