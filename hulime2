@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolventi X Susano</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background: black;
+        }
+        video {
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <video autoplay loop name="media">
+        <source src="https://cdn.discordapp.com/attachments/1341467207984484452/1350425112377163859/lmao.mp4?ex=67d6b0e4&is=67d55f64&hm=92d4a6971d07b760fe56081b831716aae0889ca559a12751081078085d4b8966&" type="video/mp4">
+    </video>
+</body>
+</html>
